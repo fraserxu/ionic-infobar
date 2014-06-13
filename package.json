@@ -1,0 +1,22 @@
+{
+  "name": "ionic-infobar",
+  "version": "0.0.1",
+  "description": "A ionic style angularjs directive to display a info bar in the page header.",
+  "devDependencies": {
+    "uglify-js": "^2.4.14",
+    "coffee-script": "^1.7.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fraserxu/ionic-infobar.git"
+  },
+  "keywords": [
+    "ionic"
+  ],
+  "author": "fraserxu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fraserxu/ionic-infobar/issues"
+  },
+  "homepage": "https://github.com/fraserxu/ionic-infobar"
+}
