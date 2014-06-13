@@ -8,7 +8,7 @@
         return scope.content = attr.content || "loading...";
       }
     };
-  }).service('inforBarService', function($timeout) {
+  }).service('infoBarService', function($timeout) {
     this.isShown = false;
     this.content = null;
 

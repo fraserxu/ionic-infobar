@@ -10,7 +10,7 @@ angular.module 'ionic.infobar', []
     }
 
 # A service to controll the content, visibality of the info bar
-.service 'inforBarService', ($timeout) ->
+.service 'infoBarService', ($timeout) ->
     @isShown = false
     @content = null
 
