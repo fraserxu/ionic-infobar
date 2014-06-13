@@ -7,4 +7,7 @@ uglify:
 clean:
 	rm -rf dist
 
-all: clean build uglify
+css:
+	cp src/ionic.infobar.css dist/ionic.infobar.css
+
+all: clean build uglify css

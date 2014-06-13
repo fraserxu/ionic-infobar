@@ -3,7 +3,7 @@
   angular.module('ionic.infobar', [].directive('infoBar', function() {
     return {
       restrict: 'E',
-      templateUrl: 'app/home/info/info.html',
+      template: '<div class="bar bar-loading bar-assertive"> {{ content }} </div>',
       link: function(scope, element, attr) {
         return scope.content = attr.content || "loading...";
       }
