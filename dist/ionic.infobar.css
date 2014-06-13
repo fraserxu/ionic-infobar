@@ -1,0 +1,30 @@
+.bar.bar-loading {
+  display: block;
+  height: 24px;
+
+  top: 64px;
+
+  text-align: center;
+  padding: 0;
+  line-height: 24px;
+
+  -webkit-transition: 200ms all;
+}
+
+.has-header {
+  -webkit-transition: 200ms top;
+}
+.has-header.loading {
+  top: 68px;
+}
+
+.bar-loading.ng-enter,
+.bar-loading.ng-leave.ng-leave-active {
+  height: 0;
+  border-width: 0px;
+}
+.bar-loading.ng-enter.ng-enter-active,
+.bar-loading.ng-leave {
+  height: 24px;
+  border-width: 1px;
+}
