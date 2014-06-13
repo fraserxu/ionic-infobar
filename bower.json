@@ -1,0 +1,22 @@
+{
+  "name": "ionic-infobar",
+  "version": "0.0.1",
+  "homepage": "https://github.com/fraserxu/ionic-infobar",
+  "authors": [
+    "fraserxu <xvfeng123@gmail.com>"
+  ],
+  "description": "A ionic style angularjs directive to display a info bar in the page header.",
+  "main": "dist/ionic.infobar.js",
+  "keywords": [
+    "ionic",
+    "angularjs"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
