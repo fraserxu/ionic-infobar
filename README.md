@@ -18,7 +18,7 @@ app.module('myApp', ['ionic-infobar'])
 In your template
 
 ```
-<info-bar ng-if="info.isShown" content="info.content"></info-bar>
+<info-bar ng-if="info.isShown" content="info.content" type="info.type"></info-bar>
 ```
 
 In your controller
@@ -28,12 +28,19 @@ myApp.controller('myCtrl', function ($scope, inforBarService) {
   $scope.info = infoBarService
 
   // show infobar
-  infoBarservice.show('some content', 4000)
+  infoBarService.show('some content', 4000)
+
+  // show with type
+  infoBarservice.show('oops, there is an error', 4000, 'bar-light')
 
   // hide infobar
-  infoBarservice.hide()
+  infoBarService.hide()
 })
 ```
+
+Options:
+
+* Type: 'bar-light', 'bar-stable', 'bar-positive', 'bar-calm', 'bar-balanced', 'bar-energized', 'bar-assertive', 'bar-royal', 'bar-dark'
 
 #### Build:
 

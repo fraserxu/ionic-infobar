@@ -3,24 +3,31 @@
   angular.module('ionic.infobar', []).directive('infoBar', function() {
     return {
       restrict: 'E',
-      template: '<div class="bar bar-loading bar-assertive"> {{ content }} </div>',
+      template: '<div class="bar bar-loading" class="{{type}}"> {{ content }} </div>',
       link: function(scope, element, attr) {
-        return scope.content = attr.content || "loading...";
+        scope.content = attr.content || "loading...";
+        return scope.type = attr.type;
       }
     };
   }).service('infoBarService', function($timeout) {
     this.isShown = false;
     this.content = null;
+    this.type = null;
 
     /**
      * show info bar with the given content
      * @param {Number} duration time
      * @param  {String} content
+     * @param {Sting} type info type
      */
-    this.show = function(content, duration) {
+    this.show = function(content, duration, type) {
       if (duration == null) {
         duration = 2000;
       }
+      if (type == null) {
+        type = 'bar-assertive';
+      }
+      this.type = type;
       this.content = content;
       this.isShown = true;
       return $timeout((function(_this) {
