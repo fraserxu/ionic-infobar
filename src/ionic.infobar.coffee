@@ -4,10 +4,10 @@ angular.module 'ionic.infobar', []
 .directive 'infoBar', ->
     return {
         restrict: 'E'
-        template: '<div class="bar bar-loading" class="{{type}}"> {{ content }} </div>'
+        template: '<div class="bar bar-loading {{type}}"> {{ content }} </div>'
         link: (scope, element, attr) ->
             scope.content = attr.content or "loading..."
-            scope.type = attr.type
+            scope.type = attr.type or "bar-assertive"
     }
 
 # A service to controll the content, visibality of the info bar

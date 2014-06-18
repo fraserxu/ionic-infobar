@@ -3,10 +3,10 @@
   angular.module('ionic.infobar', []).directive('infoBar', function() {
     return {
       restrict: 'E',
-      template: '<div class="bar bar-loading" class="{{type}}"> {{ content }} </div>',
+      template: '<div class="bar bar-loading {{type}}"> {{ content }} </div>',
       link: function(scope, element, attr) {
         scope.content = attr.content || "loading...";
-        return scope.type = attr.type;
+        return scope.type = attr.type || "bar-assertive";
       }
     };
   }).service('infoBarService', function($timeout) {
