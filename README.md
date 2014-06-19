@@ -12,7 +12,7 @@ A ionic style angularjs directive to display a info bar in the page header.
 Include the `ionic.infobar` module into your app
 
 ```JavaScript
-app.module('myApp', ['ionic-infobar'])
+app.module('myApp', ['ionic.infobar'])
 ```
 
 In your template
@@ -24,7 +24,7 @@ In your template
 In your controller
 
 ```JavaScript
-myApp.controller('myCtrl', function ($scope, inforBarService) {
+myApp.controller('myCtrl', function ($scope, infoBarService) {
   $scope.info = infoBarService
 
   // show infobar
