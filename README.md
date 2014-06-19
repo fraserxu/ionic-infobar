@@ -18,7 +18,7 @@ app.module('myApp', ['ionic.infobar'])
 In your template
 
 ```
-<info-bar ng-if="info.isShown" content="{{info.content}}" type="{{info.type}}"></info-bar>
+<info-bar info="info" ng-if="info.isShown"></info-bar>
 ```
 
 In your controller
