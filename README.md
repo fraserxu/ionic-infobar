@@ -40,7 +40,9 @@ myApp.controller('myCtrl', function ($scope, infoBarService) {
 
 Options:
 
-* Type: 'bar-light', 'bar-stable', 'bar-positive', 'bar-calm', 'bar-balanced', 'bar-energized', 'bar-assertive', 'bar-royal', 'bar-dark'
+* Type: `bar-light`, `bar-stable`, `bar-positive`, `bar-calm`, `bar-balanced`, `bar-energized`, `bar-assertive`, `bar-royal`, `bar-dark`
+
+Or check the [example folder](https://github.com/fraserxu/ionic-infobar/tree/master/example)
 
 #### Build:
 
